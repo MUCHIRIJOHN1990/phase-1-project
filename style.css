@@ -1,22 +1,59 @@
-*,
-*::before,
-*::after {
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-html,
 body {
-  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
 }
 
-img {
-  max-width: 100%;
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-main {
-  display: flex;
+ul {
+  list-style-type: none;
+  padding: 0;
+}
 
-  > * {
-    width: 50%;
-  }
+li {
+  background-color: #fff;
+  margin: 10px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+blockquote {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+p.author {
+  text-align: right;
+  font-weight: bold;
+  color: #888;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+button.like-btn {
+  color: #e74c3c;
+}
+
+button.remove-btn {
+  color: #e74c3c;
 }
