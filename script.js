@@ -6,7 +6,7 @@ const allQuotesEl = document.querySelector("ul.all-quotes");
 const favoriteQuotesEl = document.querySelector("ul.favorite-quotes");
 const fragmentEl = document.createDocumentFragment();
 
-// Application logic
+// The steps I took to get the application working
 // 1. The first event listener is the 'DOMContentLoaded' event,
 // which is triggered when the initial HTML document has been,
 // completely loaded and parsed by the browser.
