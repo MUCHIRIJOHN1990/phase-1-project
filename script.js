@@ -1,5 +1,5 @@
 // Elements of interest
-// 1. All quotes container, contains all quotes fetched from the public API
+// 1. All quotes container, will contain all quotes fetched from the API
 const allQuotesEl = document.querySelector("ul.all-quotes");
 // 2. Favorite quotes container, which start outs empty and will be populated,
 // when a user likes a quote
