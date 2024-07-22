@@ -72,25 +72,39 @@ function updateAllQuotesEl(quotes) {
 // Function to create an HTML 'li' (list item) element,
 // given a single quote data
 function createQuote(quote) {
+  // 1. Create an <li> tag
   const quoteEl = document.createElement("li");
 
+  // 2. Create a <blockquote> tag
   const blockQuote = document.createElement("blockquote");
 
-  const insideP = document.createElement("p");
-  insideP.classList.add("text");
-  insideP.textContent = quote.text;
+  // 3. Create a <p> tag for the quote text
+  const textParagraph = document.createElement("p");
+  // Add a class for styling using CSS
+  textParagraph.classList.add("text");
+  // Add the quote text inside the <p> tag
+  textParagraph.textContent = quote.text;
 
-  blockQuote.appendChild(insideP);
+  // 4. Append the <p> tag inside the <blockquote> tag
+  blockQuote.appendChild(textParagraph);
 
-  const outsideP = document.createElement("p");
-  outsideP.classList.add("author");
-  outsideP.textContent = quote.author;
+  // 5. Create another <p> tag for the author information
+  const authorParagraph = document.createElement("p");
+  // Add a CSS class for styling
+  authorParagraph.classList.add("author");
+  // Add the quote author inside the <p> tag
+  authorParagraph.textContent = quote.author;
 
+  // 6. Create the like <button>
   const likeBtn = document.createElement("button");
+  // Add a CSS class for stylling
   likeBtn.classList.add("like-btn");
+  // Add the heart emoji as the text content for the like <button>
   likeBtn.textContent = "❤️";
 
-  quoteEl.append(blockQuote, outsideP, likeBtn);
+  // Add the <blockquote>, the author <paragraph> and the like <button>,
+  //  to the quote <li> element
+  quoteEl.append(blockQuote, authorParagraph, likeBtn);
 
   fragmentEl.appendChild(quoteEl);
 }
