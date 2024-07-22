@@ -7,9 +7,9 @@ const favoriteQuotesEl = document.querySelector("ul.favorite-quotes");
 const fragmentEl = document.createDocumentFragment();
 
 // The steps I took to get the application working
-// 1. The first event listener is the 'DOMContentLoaded' event,
-// which is triggered when the initial HTML document has been,
-// completely loaded and parsed by the browser.
+// 1. We listen for the 'DOMContentLoaded' event,
+// this ensures that the DOM has been created before,
+// we start accessing HTML element from JS
 document.addEventListener("DOMContentLoaded", () => {
   // 1. Fetch the quotes data from the API
   fetchQuotes().then((quotes) => {
