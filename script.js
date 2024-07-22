@@ -48,11 +48,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Helper functions
 // Functionality to get quotes data from the API:
 // 1. Make a GET fetch request to the API
 // 2. Call the 'json()' method on the response object,
-// to convert the body from JSON to a JavaScript object
+// to convert the response body from JSON to a JavaScript object
 // 3. Return the data for use from the function
 async function fetchQuotes() {
   return fetch("https://type.fit/api/quotes").then((response) =>
