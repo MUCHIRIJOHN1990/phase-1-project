@@ -62,8 +62,10 @@ async function fetchQuotes() {
 // This function iterates over the quotes data array,
 // and creates an HTML element for each item in the array
 function updateAllQuotesEl(quotes) {
-  // Inside the function we use the forEach iterator method to create the elements
+  // 1. Inside the function we use the forEach iterator method to create the elements
   quotes.forEach((quote) => {
+    // Pass the quote data to the createQuote function,
+    // this will create a quote element
     createQuote(quote);
     allQuotesEl.appendChild(fragmentEl);
   });
