@@ -36,9 +36,12 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Functionality to remove a quote from favorite quotes list
+  // 1. Add an event listener that listens for the click event,
+  // and removes the quote that has been clicked
   favoriteQuotesEl.addEventListener("click", (event) => {
     if (event.target.matches("button.remove-btn")) {
       const parentElement = event.target.parentElement;
+      // 2. Function to remove the quote
       parentElement.remove();
     }
   });
