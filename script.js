@@ -36,18 +36,18 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Functionality to remove a quote from favorite quotes list
-  // 1. Add an event listener that listens for the click event,
+  // Add an event listener that listens for the click event,
   // and removes the quote that has been clicked
   favoriteQuotesEl.addEventListener("click", (event) => {
+    // 1. Get the quote element that has been clicked
     if (event.target.matches("button.remove-btn")) {
       const parentElement = event.target.parentElement;
-      // 2. Function to remove the quote
+      // 2. Remove the quote element
       parentElement.remove();
     }
   });
 });
 
-// Utility functions
 async function fetchQuotes() {
   return fetch("https://type.fit/api/quotes").then((response) =>
     response.json()
