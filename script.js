@@ -17,9 +17,12 @@ document.addEventListener("DOMContentLoaded", () => {
     updateAllQuotesEl(quotes);
   });
 
-  // Functionality to like a quote
+  // Functionality to like a quote.
+  // 1. Add an event listener that executes a function,
+  // to add a quote to the favorite list
   allQuotesEl.addEventListener("click", (event) => {
     if (event.target.matches("button.like-btn")) {
+      // Collect quote information
       const parentElement = event.target.parentElement;
       const text = parentElement.querySelector("p.text").textContent;
       const author = parentElement.querySelector("p.author").textContent;
@@ -27,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
         text,
         author,
       };
+      // Add the quote information to the favorite list
       addQuoteToFavorites(quote);
     }
   });
