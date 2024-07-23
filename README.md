@@ -32,16 +32,19 @@ Open index.html in your favorite web browser to run the application.
 
 # CODE EXPLANATION
 
-# HTML Structure
+## HTML Structure
 The HTML file (index.html) contains the structure of the application, including the unordered lists (ul) for displaying all quotes and favorite quotes.
 
-# JavaScript Functionality
+## JavaScript Functionality
 The JavaScript code (app.js) contains the main functionality of the application:
 
-# Selecting DOM Elements
+## Selecting DOM Elements
 Used fetch to get data
 added event listeners to bring about functionality
 
-# API USED
+## API USED
 
 Type.fit Quotes API
+
+## Deployment
+https://phase-1-project-9xm.pages.dev/
