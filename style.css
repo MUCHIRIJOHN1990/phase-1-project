@@ -31,12 +31,6 @@ li {
   border-radius: 5px;
 }
 
-blockquote {
-  font-style: italic;
-  color: #555;
-  margin-bottom: 10px;
-}
-
 p.author {
   text-align: right;
   font-weight: bold;
